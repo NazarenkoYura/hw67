@@ -39,7 +39,9 @@ registry:
   max_val_ratio: 1.0
 generation:
   max_new_tokens: 16
-  system: "Выбери один правильный вариант. Ответь только JSON с единственным полем answer и строковой меткой из choices."
+  # ASCII-промпты: manifest и samples попадают в новый процесс (python -I),
+  # где PYTHONUTF8 отключён и кириллица в stdout ломает проверку загрузки.
+  system: "You are a statistics assistant. Choose the single correct option. Reply only with JSON containing the single field answer and a letter label from choices."
   prompts:
-    - "Какая мера центральной тенденции наиболее устойчива к выбросам? A - среднее, B - медиана, C - мода, D - размах. choices: A, B, C, D."
-    - "Какой метод уменьшает переобучение, усредняя деревья, выращенные на бутстрэп-выборках? A - k-means, B - PCA, C - случайный лес, D - z-тест. choices: A, B, C, D."
+    - "Which measure of central tendency is most robust to outliers? A - mean, B - median, C - mode, D - range. choices: A, B, C, D."
+    - "Which method reduces overfitting by averaging trees grown on bootstrap samples? A - k-means, B - PCA, C - random forest, D - z-test. choices: A, B, C, D."
