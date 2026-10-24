@@ -1,0 +1,5 @@
+outs:
+- md5: 67d2844a871abd84f27101da32a8ce8b
+  size: 27063
+  hash: md5
+  path: golden.jsonl

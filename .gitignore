@@ -1,6 +1,11 @@
 .venv/
 __pycache__/
-data/
+# data/ исключается целиком, кроме DVC-указателей набора оценки (часть B)
+data/*
+!data/eval/
+data/eval/*
+!data/eval/*.dvc
+!data/eval/.gitkeep
 models/
 metrics/
 mlruns/
