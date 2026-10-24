@@ -1,3 +1,6 @@
+# Windows: конфиги и JSON содержат кириллицу; без UTF-8 Python читает их в cp1251.
+export PYTHONUTF8 := 1
+
 .PHONY: install up down sweep promote predict check check-storage
 install:
 	uv sync --frozen
@@ -10,7 +13,7 @@ sweep:
 promote:
 	uv run python -m evaluation.cli promote
 predict:
-	uv run python -m src.predict --uri models:/my-qwen-adapter@champion --prompt "Какой показатель отражает запасы железа?"
+	uv run python -m src.predict --uri models:/my-qwen-adapter@champion --prompt "Какая мера центральной тенденции наиболее устойчива к выбросам?"
 check:
 	bash tests/check.sh
 check-storage:
@@ -35,4 +38,4 @@ check-all: check check-eval
 baseline-update:
 	uv run python -m evaluation.cli baseline-update
 predict-candidate:
-	uv run python -m src.predict --uri models:/my-qwen-adapter@candidate --prompt "Выберите правильный вариант."
+	uv run python -m src.predict --uri models:/my-qwen-adapter@candidate --prompt "Какая мера центральной тенденции наиболее устойчива к выбросам? A - среднее, B - медиана, C - мода, D - размах. choices: A, B, C, D."

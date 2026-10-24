@@ -45,11 +45,13 @@ def main():
     if any(p["train"][k] <= 0 for k in ("max_steps", "train_limit", "val_limit", "batch_size", "grad_accum", "eval_every")):
         raise SystemExit("Бюджеты и размеры батча должны быть положительными")
     connect(p)
-    versions = {k: v for k, v in provenance(p).items() if not k.startswith("data_")}
+    versions = provenance(p)
     rows = []
     with mlflow.start_run(run_name="sweep", tags={"kind": "sweep", **versions}) as parent:
-        with mlflow.start_run(run_name="all-candidates", nested=True):
-            for candidate in p["sweep"]:
+        # Каждый кандидат — отдельный дочерний run: только так select и проверки
+        # находят шесть законченных runs с tags.kind = 'candidate'.
+        for candidate in p["sweep"]:
+            with mlflow.start_run(run_name=candidate["name"], nested=True):
                 rows.append(run_candidate(p, candidate, versions))
         mlflow.log_dict({"candidates": rows}, "comparison.json")
         result = {"parent_id": parent.info.run_id, "rows": rows, "provenance": versions}
