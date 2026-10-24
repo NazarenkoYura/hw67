@@ -81,7 +81,9 @@ def main():
                 model_file = download(r.info.run_id, "model/MLmodel")
                 meta = yaml.safe_load(model_file.read_text())
                 require("signature" in meta and "saved_input_example_info" in meta, "нет signature / input_example")
-                location = meta["flavors"]["python_function"]["artifacts"]["adapter"]["path"]
+                # Windows: mlflow пишет путь артефакта через os.path.join (backslash);
+                # нормализация разделителей, чтобы REST-путь скачивался и на Windows.
+                location = meta["flavors"]["python_function"]["artifacts"]["adapter"]["path"].replace("\\", "/")
                 cfg = json.loads(download(r.info.run_id, f"model/{location}/adapter_config.json").read_text())
                 require(cfg["r"] == int(r.data.params["r"]), "реальный ранг не совпал с логом")
                 require(set(cfg["target_modules"]) == set(r.data.params["target_modules"].split(',')), "модули адаптера не совпали с логом")
