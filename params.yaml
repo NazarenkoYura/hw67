@@ -3,7 +3,9 @@ model:
   name: Qwen/Qwen3-0.6B
   revision: main   # run сохраняет разрешённый commit HF, а не только main
   device: auto
-  dtype: bfloat16
+  # float32 для всех кандидатов одинаково: bf16 на этом CPU без аппаратной
+  # поддержки выполняется медленнее в разы; сравнение конфигураций остаётся честным.
+  dtype: float32
   enable_thinking: false
 data:
   train: data/tokenized/train.pt
