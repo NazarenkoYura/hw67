@@ -31,8 +31,10 @@ def run_candidate(params, candidate, versions):
         samples = {"prompt": params["generation"]["prompts"], "answer": answers}
         mlflow.log_table(samples, "samples.json")
         example = pd.DataFrame({"prompt": samples["prompt"][:1]})
+        # Прямые слэши в пути артефакта: с обратными MLmodel хранит
+        # "artifacts\adapter", и скачивание model/... через REST ломается.
         mlflow.pyfunc.log_model(artifact_path="model", python_model="src/model.py",
-            artifacts={"adapter": str(out)}, signature=infer_signature(example, answers[:1]),
+            artifacts={"adapter": str(out).replace("\\", "/")}, signature=infer_signature(example, answers[:1]),
             input_example=example,
             pip_requirements=["mlflow==2.22.2", "torch==2.14.0", "transformers==5.17.0", "peft==0.21.0", "pandas<3"])
         return {"run_id": mlflow.active_run().info.run_id, "name": candidate["name"], **results}
