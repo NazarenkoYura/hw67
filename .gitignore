@@ -1,11 +1,10 @@
 .venv/
 __pycache__/
-# data/ исключается целиком, кроме DVC-указателей набора оценки (часть B)
+# data/ исключается целиком, кроме набора оценки (часть B):
+# JSONL лежат в DVC, в Git — только .dvc-указатели
 data/*
 !data/eval/
-data/eval/*
-!data/eval/*.dvc
-!data/eval/.gitkeep
+data/eval/*.jsonl
 models/
 metrics/
 mlruns/
