@@ -6,7 +6,9 @@ data/*
 !data/eval/
 data/eval/*.jsonl
 models/
-metrics/
+# отчёты оценки коммитируются (задание: приложить отчёты, если metrics исключён)
+metrics/*
+!metrics/*.json
 mlruns/
 mlartifacts/
 *.log
