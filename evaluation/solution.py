@@ -22,6 +22,9 @@ def _parse_answer(raw, choices):
 def _counts(items):
     """n, correct, valid, errors и доли. Пустые/битые ответы остаются в знаменателе."""
     n = len(items)
+    if n == 0:
+        return {"n": 0, "correct": 0, "valid": 0, "errors": 0,
+                "accuracy": 0.0, "format_rate": 0.0}
     correct = sum(1 for i in items if i["correct"])
     valid = sum(1 for i in items if i["valid"])
     errors = sum(1 for i in items if i.get("error"))
@@ -37,8 +40,20 @@ def score(rows, outputs):
     """
     if not rows or not outputs:
         raise ValueError("Пустой набор вопросов или ответов")
-    row_ids = [r["id"] for r in rows]
-    out_ids = [o["id"] for o in outputs]
+    row_ids = []
+    for row in rows:
+        row_id = row.get("id")
+        if not isinstance(row_id, str) or not row_id.strip():
+            raise ValueError("Вопросы должны иметь непустой строковый id")
+        row_ids.append(row_id)
+    out_ids = []
+    for out in outputs:
+        out_id = out.get("id")
+        if not isinstance(out_id, str) or not out_id.strip():
+            raise ValueError("Ответы должны иметь непустой строковый id")
+        out_ids.append(out_id)
+    if len(row_ids) != len(set(row_ids)):
+        raise ValueError("Дублирующиеся id в вопросах")
     if len(out_ids) != len(set(out_ids)):
         raise ValueError("Дублирующиеся id в ответах")
     if set(out_ids) != set(row_ids):
@@ -121,6 +136,10 @@ def _check_behavioral(report, label):
 
 def quality_gate(baseline, candidate, critical_slices):
     """{passed: True, ...} или ValueError. Допуск регрессии — ноль, порог до измерения."""
+    if not isinstance(critical_slices, list) or not critical_slices:
+        raise ValueError("Нужен непустой список критических срезов")
+    if any(not isinstance(name, str) or not name.strip() for name in critical_slices):
+        raise ValueError("Критический срез должен быть непустой строкой")
     _check_structure(baseline, "baseline")
     _check_structure(candidate, "candidate")
     for key in ("protocol_sha256", "golden_sha256", "baseline_spec_sha256"):

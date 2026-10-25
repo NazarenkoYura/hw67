@@ -8,15 +8,7 @@
     "format_rate": 0.8076923076923077
   },
   "slices": {
-    "probability": {
-      "n": 12,
-      "correct": 0,
-      "valid": 5,
-      "errors": 0,
-      "accuracy": 0.0,
-      "format_rate": 0.4166666666666667
-    },
-    "hypothesis-testing": {
+    "distributions": {
       "n": 10,
       "correct": 0,
       "valid": 9,
@@ -32,7 +24,7 @@
       "accuracy": 0.1,
       "format_rate": 1.0
     },
-    "distributions": {
+    "regression": {
       "n": 10,
       "correct": 0,
       "valid": 9,
@@ -40,7 +32,15 @@
       "accuracy": 0.0,
       "format_rate": 0.9
     },
-    "regression": {
+    "probability": {
+      "n": 12,
+      "correct": 0,
+      "valid": 5,
+      "errors": 0,
+      "accuracy": 0.0,
+      "format_rate": 0.4166666666666667
+    },
+    "hypothesis-testing": {
       "n": 10,
       "correct": 0,
       "valid": 9,
@@ -631,7 +631,7 @@
     "run_id": "40fb010a42434f6b80ad07a6587911d7",
     "uri": "models:/my-qwen-adapter/3"
   },
-  "protocol_sha256": "dee80b0388bc09812c45da79885d97d033c8c2d92d5678dfce97d90089a591c5",
+  "protocol_sha256": "856233ebe54a90823ee20f95e07fefd9c96b9342efce28e7d7eb373c1ba59493",
   "golden_sha256": "0cc8b5cbd11b1ee9dcdb0738e08db8123a8d915c422834f998929c78cff41524",
   "baseline_spec_sha256": "f71269b95f6b4e1e160fa25e9af6c973517cfebad15880b75b56c8184680b163",
   "behavioral": {
@@ -695,6 +695,6 @@
     "n_golden": 52,
     "n_behavioral": 3
   },
-  "outputs_sha256": "bf8b7f72d26ea5665bcb4cc21d4cb74f670538d973a5e812edd70e7a75c1a480",
-  "evaluation_run_id": "feb3ec121f4f4454af6cb1147121e982"
+  "outputs_sha256": "b814dafed5f0da2684a34e8a10c4e49bb420f097b8afccbc24759b75bbc5d761",
+  "evaluation_run_id": "7426f58975a748f88c6863c3701c7561"
 }

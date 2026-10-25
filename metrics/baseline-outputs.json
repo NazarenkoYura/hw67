@@ -3,163 +3,163 @@
     "id": "golden-probability-001",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.7970000000004802
+    "latency_seconds": 2.07799999999952
   },
   {
     "id": "golden-probability-002",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.7810000000008586
+    "latency_seconds": 1.969000000000051
   },
   {
     "id": "golden-probability-003",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.764999999999418
+    "latency_seconds": 1.8910000000005311
   },
   {
     "id": "golden-probability-004",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.75
+    "latency_seconds": 1.7969999999995707
   },
   {
     "id": "golden-probability-005",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.735000000000582
+    "latency_seconds": 1.7650000000003274
   },
   {
     "id": "golden-probability-006",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.6719999999986612
+    "latency_seconds": 1.75
   },
   {
     "id": "golden-probability-007",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.765000000001237
+    "latency_seconds": 1.7969999999995707
   },
   {
     "id": "golden-probability-008",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.6880000000001019
+    "latency_seconds": 1.844000000000051
   },
   {
     "id": "golden-probability-009",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.7029999999995198
+    "latency_seconds": 1.8119999999998981
   },
   {
     "id": "golden-probability-010",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8909999999996217
+    "latency_seconds": 1.7820000000001528
   },
   {
     "id": "golden-probability-011",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9060000000008586
+    "latency_seconds": 1.780999999999949
   },
   {
     "id": "golden-probability-012",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.889999999999418
+    "latency_seconds": 1.844000000000051
   },
   {
     "id": "golden-regression-013",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9539999999997235
+    "latency_seconds": 1.8119999999998981
   },
   {
     "id": "golden-regression-014",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9060000000008586
+    "latency_seconds": 1.7970000000004802
   },
   {
     "id": "golden-regression-015",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9059999999990396
+    "latency_seconds": 1.7659999999996217
   },
   {
     "id": "golden-regression-016",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8909999999996217
+    "latency_seconds": 1.7960000000002765
   },
   {
     "id": "golden-regression-017",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8119999999998981
+    "latency_seconds": 1.7659999999996217
   },
   {
     "id": "golden-regression-018",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 2.0
+    "latency_seconds": 1.7970000000004802
   },
   {
     "id": "golden-regression-019",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.875
+    "latency_seconds": 1.8119999999998981
   },
   {
     "id": "golden-regression-020",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9220000000004802
+    "latency_seconds": 1.7659999999996217
   },
   {
     "id": "golden-regression-021",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.875
+    "latency_seconds": 1.7970000000004802
   },
   {
     "id": "golden-regression-022",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9060000000008586
+    "latency_seconds": 1.780999999999949
   },
   {
     "id": "golden-hypothesis-023",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9380000000001019
+    "latency_seconds": 1.8130000000001019
   },
   {
     "id": "golden-hypothesis-024",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.889999999999418
+    "latency_seconds": 1.8119999999998981
   },
   {
     "id": "golden-hypothesis-025",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8439999999991414
+    "latency_seconds": 2.0
   },
   {
     "id": "golden-hypothesis-026",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 2.0310000000008586
+    "latency_seconds": 2.1099999999996726
   },
   {
     "id": "golden-hypothesis-027",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8439999999991414
+    "latency_seconds": 1.9210000000002765
   },
   {
     "id": "golden-hypothesis-028",
@@ -171,162 +171,162 @@
     "id": "golden-hypothesis-029",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 2.061999999999898
+    "latency_seconds": 2.125
   },
   {
     "id": "golden-hypothesis-030",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9220000000004802
+    "latency_seconds": 1.8589999999994689
   },
   {
     "id": "golden-hypothesis-031",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9690000000009604
+    "latency_seconds": 1.985000000000582
   },
   {
     "id": "golden-hypothesis-032",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9219999999986612
+    "latency_seconds": 1.9839999999994689
   },
   {
     "id": "golden-machine-033",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9220000000004802
+    "latency_seconds": 2.25
   },
   {
     "id": "golden-machine-034",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9529999999995198
+    "latency_seconds": 2.313000000000102
   },
   {
     "id": "golden-machine-035",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9060000000008586
+    "latency_seconds": 2.3590000000003783
   },
   {
     "id": "golden-machine-036",
     "raw": "```json\n{\n  \"answer\": \"D\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.7970000000004802
+    "latency_seconds": 2.219000000000051
   },
   {
     "id": "golden-machine-037",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.9689999999991414
+    "latency_seconds": 2.608999999999469
   },
   {
     "id": "golden-machine-038",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.889999999999418
+    "latency_seconds": 2.141000000000531
   },
   {
     "id": "golden-machine-039",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8130000000001019
+    "latency_seconds": 2.108999999999469
   },
   {
     "id": "golden-machine-040",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8280000000013388
+    "latency_seconds": 2.0780000000004293
   },
   {
     "id": "golden-machine-041",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8279999999995198
+    "latency_seconds": 2.405999999999949
   },
   {
     "id": "golden-machine-042",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8279999999995198
+    "latency_seconds": 2.2659999999996217
   },
   {
     "id": "golden-distributions-043",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8279999999995198
+    "latency_seconds": 2.17200000000048
   },
   {
     "id": "golden-distributions-044",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.875
+    "latency_seconds": 2.280999999999949
   },
   {
     "id": "golden-distributions-045",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8130000000001019
+    "latency_seconds": 2.219000000000051
   },
   {
     "id": "golden-distributions-046",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.7970000000004802
+    "latency_seconds": 2.25
   },
   {
     "id": "golden-distributions-047",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.75
+    "latency_seconds": 2.375
   },
   {
     "id": "golden-distributions-048",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.7810000000008586
+    "latency_seconds": 2.07799999999952
   },
   {
     "id": "golden-distributions-049",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.875
+    "latency_seconds": 2.313000000000102
   },
   {
     "id": "golden-distributions-050",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.7969999999986612
+    "latency_seconds": 2.3590000000003783
   },
   {
     "id": "golden-distributions-051",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.765000000001237
+    "latency_seconds": 2.344000000000051
   },
   {
     "id": "golden-distributions-052",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.8439999999991414
+    "latency_seconds": 2.405999999999949
   },
   {
     "id": "behavioral-001",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.7970000000004802
+    "latency_seconds": 2.280999999999949
   },
   {
     "id": "behavioral-002",
     "raw": "```json\n{\n  \"answer\": \"REFUSE\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.875
+    "latency_seconds": 2.5159999999996217
   },
   {
     "id": "behavioral-003",
     "raw": "```json\n{\n  \"answer\": \"A\"\n}\n```",
     "error": null,
-    "latency_seconds": 1.7029999999995198
+    "latency_seconds": 2.1090000000003783
   }
 ]

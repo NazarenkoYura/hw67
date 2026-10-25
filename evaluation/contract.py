@@ -41,10 +41,16 @@ def validate_golden(rows, training, behavioral):
             raise ValueError('Нужны допустимые строковые метки choices')
         if row.get('expected') not in row['choices'] or not row.get('source'):
             raise ValueError('Нужны проверенный expected и source')
+    if len({row['id'] for row in rows}) != len(rows):
+        raise ValueError('В golden есть повторяющиеся id')
+    if len({row['id'] for row in behavioral}) != len(behavioral):
+        raise ValueError('В behavioral есть повторяющиеся id')
     normalize = lambda s: ' '.join(s.casefold().split())
     golden_inputs = [normalize(row['input']) for row in rows]
     if len(golden_inputs) != len(set(golden_inputs)):
         raise ValueError('В golden есть точные дубли вопросов с разными id')
+    if len({row['group_id'] for row in rows}) != len(rows):
+        raise ValueError('В golden есть повторяющиеся group_id')
     train_inputs = {normalize(row['input']) for row in training}
     train_groups = {row['group_id'] for row in training}
     leaks = [row['id'] for row in rows if normalize(row['input']) in train_inputs or row['group_id'] in train_groups]
